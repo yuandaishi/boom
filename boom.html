@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>爆炸效果</title>
+		<style type="text/css" id="boom_css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.img_list{
+				margin: 50px auto;
+				text-align: center;
+				font-size: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="img_list boom">
+			<img src="img/four.jpg"width="800" style="opacity: 0;"/>
+		</div>
+		<div class="img_list boom">
+			<img src="img/jisoo.jpg" width="300" style="opacity: 0;"/>
+		</div>
+		<div class="img_list boom_1">
+			<img src="img/four5.jpg" width="800" style="opacity: 0;"/>
+		</div>
+	</body>
+	<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/boom.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var a=new Boom({//以对象的形式传入参数
+			className:"boom"
+		});
+		var b=new Boom({
+			className:"boom_1",
+			row:20,
+			col:15
+		})
+	</script>
+</html>
